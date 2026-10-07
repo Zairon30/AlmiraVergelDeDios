@@ -217,3 +217,19 @@ nav a:not(.active):hover::after{transform:scaleX(1)}
  .reveal h2,.reveal .about>div:first-child p,.reveal .callout,.reveal .sub,.reveal .viewer,.reveal .contact>div,.reveal .contact>form,.reveal .info li,.cta .wrap,footer .wrap{opacity:1!important;transform:none!important}
  .hero::before{animation:none}
 }
+
+/* ---------- Illustrations & tools ---------- */
+.card-art{display:block;width:100%;max-width:320px;height:auto;margin-bottom:1.5rem}
+.bento .big{justify-content:space-between}
+.tools-title{margin:2.5rem 0 1rem;font-size:1.3rem}
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.tool{display:flex;align-items:center;gap:1rem;padding:1.2rem 1.4rem;background:#fff}
+.tool svg{width:56px;height:56px;flex:none;border-radius:14px}
+.tool strong{display:block;color:var(--choc);font-weight:800}
+.tool span{font-size:.9rem;color:var(--med);font-weight:500;line-height:1.4;display:block}
+.exp-art{margin:0 0 2rem}
+.exp-art svg{display:block;width:100%;height:auto;border-radius:28px;box-shadow:var(--sh)}
+.reveal .exp-art{opacity:0;transform:scale(.97);transition:opacity .8s ease .2s,transform .8s ease .2s}
+.reveal.in .exp-art{opacity:1;transform:none}
+@media(max-width:600px){.exp-art svg{min-height:200px}}
+@media(prefers-reduced-motion:reduce){.reveal .exp-art{opacity:1!important;transform:none!important}}
